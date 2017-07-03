@@ -1,0 +1,5 @@
+set.seed(9007)
+my.data<-data.frame(x=rnorm(10),y=rnorm(10)+5,z=rchisq(10,1))
+additional.data<-data.frame(x=rnorm(3),y=rnorm(3)+5,z=rchisq(3,1))
+write.table(my.data,"Exercise_6.1.txt")
+write.table(additional.data,"Data/Exercise 6.1.txt",row.names=FALSE,col.names=FALSE,append=T)
