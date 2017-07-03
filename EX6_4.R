@@ -1,0 +1,6 @@
+set.seed(45)
+my.data<-data.frame(x=rnorm(10),y=rnorm(10),z=rnorm(10))
+save(my.data,file="Data/Exercise 6.4.Rdata")
+rm(my.data)
+load(”Data/Exercise 6.4.Rdata”)
+head(my.data)
